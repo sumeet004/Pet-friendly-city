@@ -1,0 +1,210 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://source.unsplash.com/featured/?pets,dogs') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero h1,
+  .hero p,
+  .cta-buttons {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-buttons button {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .cta-buttons button:hover {
+    background-color: #ff6f00;
+  }
+  
+  /* Form Section */
+  .form-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  form button {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Stories Section */
+  .stories-section {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .stories-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .story,
+  .story-placeholder {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #ff914d;
+    background-color: #fef3e7;
+    border-radius: 10px;
+  }
+  
+  /* Carousel Section */
+  .adoption-carousel {
+    padding: 60px 20px;
+    background-color: #f1faff;
+    text-align: center;
+  }
+  
+  .adoption-carousel h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel-item {
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .carousel-item h4 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Chatbot Section */
+  .chatbot {
+    padding: 60px 20px;
+    background-color: #e6ffe6;
+    text-align: center;
+  }
+  
+  .chatbot h2 {
+    margin-bottom: 20px;
+  }
+  
+  #chatbot-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-height: 150px;
+  }
+  
+  /* Footer */
+  .credits {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .credits a {
+    color: #ffdd57;
+    text-decoration: none;
+  }
+  

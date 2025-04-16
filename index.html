@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly City</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>🐾 Building a Pet-Friendly Future Together!</h1>
+    <p>Make your city a paradise for pets.</p>
+    <div class="cta-buttons">
+      <button onclick="scrollToSection('volunteer-form')">Join the Movement</button>
+      <button onclick="scrollToSection('volunteer-form')">Volunteer Now</button>
+      <button onclick="scrollToSection('impact-stories')">Learn More</button>
+    </div>
+  </header>
+
+  <!-- Volunteer Form -->
+  <section id="volunteer-form" class="form-section">
+    <h2>Volunteer With Us 🐶</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="role">Preferred Role:</label>
+      <select id="role" name="role">
+        <option value="event">Event Organizer</option>
+        <option value="fundraiser">Fundraiser</option>
+        <option value="caretaker">Animal Caretaker</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Impact Stories -->
+  <section id="impact-stories" class="stories-section">
+    <h2>Impact Stories 🐾</h2>
+    <div class="story">
+      <h3>Max’s New Life</h3>
+      <p>After being rescued from the streets, Max found a loving home. His transformation shows the power of community care.</p>
+    </div>
+    <div class="story-placeholder">
+      <p>More stories coming soon...</p>
+    </div>
+  </section>
+
+  <!-- Pet Adoption Carousel -->
+  <section class="adoption-carousel">
+    <h2>🐕 Meet Your Future Pet!</h2>
+    <div class="carousel" id="carousel">
+      <!-- JS will populate pet profiles here -->
+    </div>
+  </section>
+
+  <!-- PawBuddy Chatbot -->
+  <section class="chatbot">
+    <h2>💬 Chat with PawBuddy</h2>
+    <div id="chatbot-box">
+      <p>Loading chatbot...</p>
+    </div>
+  </section>
+
+  <!-- Credits -->
+  <footer class="credits">
+    <p>Inspired by <a href="https://collegetips.in/pfc/" target="_blank">CollegeTips.in/pfc</a> | Designed by [Your Name]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
